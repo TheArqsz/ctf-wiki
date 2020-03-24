@@ -18,7 +18,7 @@ Inne tego typu miejsca znaleźć można [tu](https://captf.com/practice-ctf/).
 
 Zawsze ciekawą opcją jest oglądanie i analiza tego jak ktoś inny atakuje systemy lub rozwiązuje CTFy. Przykłady:
 
-- [LiveOverflow](https://liveoverflow.com/)
+- kanał [LiveOverflow](https://www.youtube.com/watch?v=8ev9ZX9J45A)
 - kanał Youtube [Gynvael'a Coldwin'a](https://www.youtube.com/watch?v=sFdMjvt5W2Y&list=PL0ZCORAYPo2AVflF8N9Usn5mVAm97px6-&index=5)
 - kanał Youtube [John'a Hammond'a](https://www.youtube.com/watch?v=AjaNYs3trjk&list=PL1H1sBF1VAKUmJio8DWjY0tHLwf3bl2ku)
 
