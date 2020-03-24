@@ -51,3 +51,22 @@ plugins:
     - minify:
         minify_html: true
     
+# Remove 'Edit on Github' button
+edit_uri: ''
+
+nav:
+    - Główna:
+        - Wstęp: index.md 
+        - O CTFach: main/about.md
+        - Jak zacząć: main/how_to_start.md
+
+    - Web:
+        - O kategorii: web/about.md
+    - Misc:
+        - Miscellaneous Introduction: misc/introduction-zh.md
+        - Information Gathering Technology: misc/recon-zh.md
+        - Code Analysis:
+            - Commonly Used Coding in the Communication Field: misc/encode/communication-zh.md
+            - Computer Related Coding: misc/encode/computer-zh.md
+            - Commonly Used Encodings in the Real World: misc/encode/modern-zh.md
+        - Forensic Steganography: misc/prefix-zh.md
