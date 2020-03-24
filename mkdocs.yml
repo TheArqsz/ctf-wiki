@@ -25,7 +25,7 @@ theme:
         tabs: true
 extra:
     search:
-        language: 'pl,en'
+        language: 'pl'
     social:
         - type: 'github'
           link: 'https://github.com/TheArqsz'
