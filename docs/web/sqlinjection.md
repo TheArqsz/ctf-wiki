@@ -23,7 +23,7 @@ Po wpisaniu `admin` otrzymujemy wynik `not funny`.
 
 Na początek należy przeprowadzić weryfikację czy atak SQLi jest możliwy. Można to zrobić przez podanie `'` zamiast parametru.
 
-![Aplikacja PHP - podatna?](assets/images/web/sqlinjection/php_app_check.png)
+![Aplikacja PHP - podatna?]({{ data.site_url }}/assets/images/web/sqlinjection/php_app_check.png)
 
 Informacja ta mówi nam o tym, że jest to strona podatna na atak. Następnym krokiem będzie weryfikacja z jakim typem bazy danych mamy do czynienia. Można to zrobić przez sprawdzenie wersji oprogramowania - polecenie to różni się między dialektami
 
@@ -47,7 +47,7 @@ SELECT is_funny FROM funny as f, users as u
 UNION SELECT sqlite_version(); --'
 ```
 
-![Aplikacja PHP - podatna?](assets/images/web/sqlinjection/php_app_version.png)
+![Aplikacja PHP - podatna?]({{ data.site_url }}/assets/images/web/sqlinjection/php_app_version.png)
 
 Dzięki temu wiemy, że jest to baza Sqlite3. Następnym krokiem będzie ekstrakcja nazw tabel i kolumn. Zrobić to można poleceniem 
 ```sql
@@ -58,11 +58,11 @@ które w tym przypadku przybierze formę
 admin' UNION SELECT sql from sqlite_master; --'
 ```
 
-![Aplikacja PHP - kolumny](assets/images/web/sqlinjection/php_app_columns.png)
+![Aplikacja PHP - kolumny]({{ data.site_url }}/assets/images/web/sqlinjection/php_app_columns.png)
 
 Jako, że `UNION` wymaga takiej samej ilości kolumn w wyniku obu zapytań, dane z bazy będzie można wyciągać tylko pojedyńczo. Przykładowo hasło użytkownika `admin` pozyskamy stosując polecenie
 ```sql
 admin' UNION SELECT password from users WHERE user_name = 'admin'; --'
 ```
 
-![Aplikacja PHP - haslo](assets/images/web/sqlinjection/php_app_password.png)
+![Aplikacja PHP - haslo]({{ data.site_url }}/assets/images/web/sqlinjection/php_app_password.png)
