@@ -22,6 +22,8 @@ Najpopularniejsza forma CTFów. Turniej podzielony jest na różnorakie kategori
 
 Występują też inne takie jak `OSINT` (wyszukiwanie informacji w internecie i nie tylko) czy `TRIVIA`, ale nie są one tak popularne jak te wymienione wcześniej.
 
+### Flaga
+
 Każda z kategorii zawiera inny typ zadań, ale ich cel jest taki sam - znaleźć `flagę`. Może ona przybierać rozmaite formy, ale najczęściej jest to
 ```
 skrót turnieju + '{' + ciąg znaków + '}'
@@ -42,6 +44,8 @@ Skrót turnieju to `BtS-CTF`. Zadanie oparte było (w duzym uproszczeniu) na man
 BtS-CTF{y0u_f0und_my_h34d3r5_6r347_w0rk}
 ```
 
+### O kategoriach
+
 Szczegółowy opis każdej z kategorii:
  
 - [web](/web/about/) 
@@ -49,3 +53,16 @@ Szczegółowy opis każdej z kategorii:
 - [crypto](/crypto/about/)
 - [misc](/misc/about/)
 - [re](/re/about/)
+
+## Attack and Defence
+
+Ten typ zawodów jest zdecydowanie mniej popularny, ale nie znaczy to, że mniej ciekawy. Taki turniej jest trudniejszy do zorganizowania ze względu na duże wymagania infrastrukturalne, dlatego rzadko kiedy spotyka się tą formę w wersji online. 
+
+Gracze dostają taki sam zestaw środowisk i mają za zadanie jak najlepiej je zabezpieczyć.
+
+Celem jest obrona własnej maszyny, ataki na środowiska innych drużyn i utrzymanie się jak najdłużej w stawce. 
+
+Najsłynniejsze tego typu wydarzenia to:
+
+- [iCTF](https://ictf.cs.ucsb.edu/)
+- [DEF CON CTF](https://blog.legitbs.net/2017/07/def-con-ctf-2017-final-scores-and-data.html)

@@ -47,7 +47,8 @@ markdown_extensions:
 
 # Plugins
 plugins:
-    - search
+    - search:
+        separator: '[\-\.]+'
     - minify:
         minify_html: true
     
@@ -58,10 +59,12 @@ nav:
     - Główna:
         - Wstęp: index.md 
         - O CTFach: main/about.md
-        - Jak zacząć: main/how_to_start.md
+        - Jak zacząć?: main/how_to_start.md
+        - Co dalej?: main/what_next.md
 
     - Web:
         - O kategorii: web/about.md
+        - SQLi: web/sqlinjection.md
     - Misc:
         - Miscellaneous Introduction: misc/introduction-zh.md
         - Information Gathering Technology: misc/recon-zh.md
