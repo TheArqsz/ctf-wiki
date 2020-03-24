@@ -55,6 +55,7 @@ extra:
           link: 'https://www.linkedin.com/in/amaruszczak'
     data:
         repo_url: 'https://github.com/TheArqsz/ctf-wiki'
+        site_url: '/ctf-wiki'
     
 # Remove 'Edit on Github' button
 edit_uri: ''
