@@ -5,7 +5,7 @@ echo "
         <title>Are you funny?</title>
     </head>
     <body>
-        Give me your name and I will tell you whether you are funny<br/>
+        Give me your name and I will tell you whether it is funny<br/>
         <form action=\"index.php\" method=\"GET\">
             <input type=\"text\" name=\"name\"/><br/>
             <input type=\"submit\"/>
@@ -13,14 +13,15 @@ echo "
 if(array_key_exists('name', $_GET)) {
     $name = $_GET["name"];
     $db = new SQLite3('example.db');
-    $query = "SELECT is_funny FROM funny as f, users as u JOIN users ON f.user_name=u.user_name WHERE u.user_name='$name';";
+    $query = "SELECT is_funny FROM funny as f, users as u JOIN users ON f.user_name=u.user_name WHERE u.user_name='$name'";
     $result = @$db->query($query);
-    if($status = $result->fetchArray()[0]){
-        echo $status;
-    } else {
-        echo("No such user");
+    try{
+        while($row = $result->fetchArray()) {
+            echo $row[0] . "<br/>";
+        }
+    } catch (Error $e) {    
+        echo $db->lastErrorMsg(); 
     }
-    
 }
 echo "
     </body>

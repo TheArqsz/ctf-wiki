@@ -23,18 +23,6 @@ theme:
     language: 'pl'
     feature:
         tabs: true
-extra:
-    search:
-        language: 'pl'
-    social:
-        - type: 'github'
-          link: 'https://github.com/TheArqsz'
-        - type: 'twitter'
-          link: 'https://twitter.com/Arqsz'
-        - type: 'telegram'
-          link: 'https://telegram.me/Arqsz'
-        - type: 'linkedin'
-          link: 'https://www.linkedin.com/in/amaruszczak'
 
 # Extensions
 markdown_extensions:
@@ -51,6 +39,22 @@ plugins:
         separator: '[\-\.]+'
     - minify:
         minify_html: true
+    - markdownextradata
+
+extra:
+    search:
+        language: 'pl'
+    social:
+        - type: 'github'
+          link: 'https://github.com/TheArqsz'
+        - type: 'twitter'
+          link: 'https://twitter.com/Arqsz'
+        - type: 'telegram'
+          link: 'https://telegram.me/Arqsz'
+        - type: 'linkedin'
+          link: 'https://www.linkedin.com/in/amaruszczak'
+    data:
+        repo_url: 'https://github.com/TheArqsz/ctf-wiki'
     
 # Remove 'Edit on Github' button
 edit_uri: ''
