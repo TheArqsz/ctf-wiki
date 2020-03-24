@@ -56,7 +56,7 @@ plugins:
 edit_uri: ''
 
 nav:
-    - Główna:
+    - Start:
         - Wstęp: index.md 
         - O CTFach: main/about.md
         - Jak zacząć?: main/how_to_start.md
